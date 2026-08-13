@@ -723,7 +723,9 @@ void InfoWindow::drawScrollingStuff()
 			{
 				if ( curY > NAMETOP )
 				{
-					cLoadString( IDS_COMP_ABBR0 + names[i], tmpName, 255 );
+					DWORD stringId = IDS_COMP_ABBR0 + (unsigned char)names[i];
+
+					cLoadString( stringId, tmpName, 255 );
 					capHeader.Format( "%ld/%ld  %s", disabledCount[i][0], disabledCount[i][1], tmpName );
 					componentFont.render( capHeader, COMPONENTLEFT, curY, SCROLLLEFT - COMPONENTLEFT, height, textColors[j], 0, 0 );
 				}
