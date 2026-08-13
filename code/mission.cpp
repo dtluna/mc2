@@ -297,7 +297,7 @@ extern __int64 x;
 #endif
 
 long GameVisibleVertices		= 60;
-float BaseHeadShotElevation		= 1.0f;
+float BaseHeadShotElevation		= 0.05f;
 
 bool DisplayCameraAngle = false;
 extern long MaxResourcePoints;
