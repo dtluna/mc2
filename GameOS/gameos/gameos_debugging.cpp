@@ -72,7 +72,7 @@ int __cdecl InternalFunctionPause( const char* fmt, ... )
 	va_list	ap;
 
     va_start(ap, fmt);
-    logmsg("PAUSE", fmt, ap);
+    logmsg("PAUSE ", fmt, ap);
     va_end(ap);
 
     return enter_debugger;
